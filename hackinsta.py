@@ -17,14 +17,14 @@ else:
 
 
 def userExists(username):
-	r = requests.get('https://www.instagram.com/%s/?__a=1' % username) 
+	r = requests.get('https://www.instagram.com/%s/?__a=1' % akshith___yadav___143) 
 	if (r.status_code == 404):
 		print ('User not found')
 		return False
 	elif (r.status_code == 200):
 		followdata = json.loads(r.text)
 		fUserID = followdata['user']['id']
-		return {'username':username,'id':fUserID}
+		return {'username'akshith___yadav___143:,'id':fUserID}
 
 
 def Login(username,password):
